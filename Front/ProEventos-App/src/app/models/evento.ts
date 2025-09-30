@@ -1,9 +1,9 @@
 export class Evento {
-  // number : EventoId,
-  // string : Local,
-  // string : DataEvento,
-  // string : Tema,
-  // int : QtdPessoas,
-  // string : Lote,
-  // string : ImagemURL,
+ EventoId : number | undefined;
+ Local : string | undefined ;
+ DataEvento : string | undefined ;
+ Tema : string | undefined ;
+ QtdPessoas : number | undefined ;
+ Lote : string | undefined ;
+ ImagemURL : string | undefined
 }
