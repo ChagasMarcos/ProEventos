@@ -4,17 +4,14 @@ namespace ProEventos.Domain
 {
     public class Lote
     {
-        // public Lote(int id, string nome, decimal preco, DateTime? dataInicio, DateTime? dataFim, int quantidade, int eventoId, Evento evento)
-        // {
-        //     Id = id;
-        //     Nome = nome;
-        //     Preco = preco;
-        //     DataInicio = dataInicio;
-        //     DataFim = dataFim;
-        //     Quantidade = quantidade;
-        //     EventoId = eventoId;
-        //     Evento = evento;
-        // }
+
+         public Lote(string nome, decimal preco, int quantidade, int eventoId)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+            EventoId = eventoId;
+        }
 
         public int Id { get; set; }
         public string Nome { get; set; }

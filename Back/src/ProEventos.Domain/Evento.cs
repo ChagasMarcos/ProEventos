@@ -5,21 +5,22 @@ namespace ProEventos.Domain
 {
     public class Evento
     {
-        // public Evento(int id, string local, DateTime? dataEvento, string tema, int qtdPessoas, string lote, string imagemURL, string telefone, string email, IEnumerable<Lote> lotes, IEnumerable<RedeSocial> redesSociais, IEnumerable<PalestranteEvento> palestrantesEventos)
-        // {
-        //     Id = id;
-        //     Local = local;
-        //     DataEvento = dataEvento;
-        //     Tema = tema;
-        //     QtdPessoas = qtdPessoas;
-        //     Lote = lote;
-        //     ImagemURL = imagemURL;
-        //     Telefone = telefone;
-        //     Email = email;
-        //     Lotes = lotes;
-        //     RedesSociais = redesSociais;
-        //     PalestrantesEventos = palestrantesEventos;
-        // }
+
+            public Evento(string local, string tema, int qtdPessoas, string imagemURL, string telefone, string email)
+            {
+                Local = local;
+                Tema = tema;
+                QtdPessoas = qtdPessoas;
+                ImagemURL = imagemURL;
+                Telefone = telefone;
+                Email = email;
+                
+                //Opcional: Você pode inicializar as coleções aqui para garantir que nunca sejam null
+                Lotes = new List<Lote>();
+                RedesSociais = new List<RedeSocial>();
+                PalestrantesEventos = new List<PalestranteEvento>();
+            }
+                
 
         public int Id { get; set; }
         public string Local { get; set; }
@@ -34,6 +35,5 @@ namespace ProEventos.Domain
         public IEnumerable<RedeSocial> RedesSociais { get; set; }
         public IEnumerable<PalestranteEvento> PalestrantesEventos { get; set; }
 
-        
     }
 }
