@@ -75,16 +75,16 @@ export class EventosComponent {
   }
 
 
-  openModal(template: TemplateRef<any>) : void {
+  public openModal(template: TemplateRef<any>) : void {
     this.modalRef = this.modalService.show(template, { class: 'modal-sm' });
   }
 
-  confirm(): void {
+  public confirm(): void {
     this.modalRef?.hide();
     this.toastr.success('Evento deletado com sucesso.', 'Deletado');
   }
 
-  decline(): void {
+  public decline(): void {
     this.modalRef?.hide();
   }
 

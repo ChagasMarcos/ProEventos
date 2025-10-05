@@ -46,7 +46,7 @@ import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
       preventDuplicates: true,
       progressBar: true
     }),
-    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
+    NgxSpinnerModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [EventoService],
